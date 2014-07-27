@@ -1,3 +1,4 @@
+#
 library(shiny)
 
 shinyUI(
@@ -13,6 +14,7 @@ shinyUI(
       dateRangeInput("dates", "Date range", start = as.character(Sys.Date()-60), 
                      end = as.character(Sys.Date())),
       
+
       br(),
       selectInput("type", 
         label="Choose a type of chart", 
