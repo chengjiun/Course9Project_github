@@ -9,6 +9,14 @@ runApp()
 ```
 
 4. how to deploy the project to shiny cloud: https://github.com/rstudio/shinyapps/blob/master/guide/guide.md 
+<<<<<<< HEAD
 ```{r}
 deployApp()
 ```
+=======
+
+deployApp()
+
+5. The slides made from Rpresentor is in Rpubs with address http://rpubs.com/chengjiun/stockvis
+ 
+>>>>>>> FETCH_HEAD
