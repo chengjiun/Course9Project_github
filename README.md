@@ -3,11 +3,12 @@
 3. to run locally:
 
 library(shiny)
-
+```{r}
 setwd('~/Downloads/C9_dev/stockVis/')
-
 runApp()
+```
 
 4. how to deploy the project to shiny cloud: https://github.com/rstudio/shinyapps/blob/master/guide/guide.md 
-
+```{r}
 deployApp()
+```
