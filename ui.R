@@ -5,7 +5,9 @@ shinyUI(
   
   sidebarLayout(
     sidebarPanel(
-      helpText("Select a stock to examine. Example: GOOG, SPY, ..."),
+        helpText("Select a stock to examine, example: GOOG, FB, ..., 
+                 and the date range to extracted. 
+                 The plot will be reloaded automatically."),
       textInput("symb", "Symbol", "SPY"),
     
       dateRangeInput("dates", "Date range", start = as.character(Sys.Date()-60), 
@@ -13,7 +15,7 @@ shinyUI(
       
       br(),
       selectInput("type", 
-        label="Choose a type to plot", 
+        label="Choose a type of chart", 
         choices = list("candlesticks"="candlesticks", "matchsticks"="matchsticks", "bars"="bars","line"="line"),
         selected = "line"),
       
@@ -29,6 +31,8 @@ shinyUI(
                small than the range of date.')
     ),
     
-    mainPanel(plotOutput("plot"))
+    mainPanel(
+        p('Show the historical daily price of the selected stockset'),
+        plotOutput("plot"))
   )
 ))
